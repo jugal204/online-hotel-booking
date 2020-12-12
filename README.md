@@ -1,1 +1,1 @@
-# hotel-mangament
+# online-hotel-booking
