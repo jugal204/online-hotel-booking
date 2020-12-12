@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hotel Booking</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+			background-image: url('login.jpg');
+			background-size: cover;
+			background-position: center center;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	<ul>
+		<li class="nav-brand"><a href="#"></a></li>
+		<div class="nav-right">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="login.htm">Log In</a></li>
+		<li><a href="signup.htm">Sign Up</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>    
+	</div>
+	</ul>
+</nav>
+
+<h1 style="font-size: 50px; line-height: 65px; font-family: cursive; padding-left:35%; ">Booking info</h1>
+
+<form>
+	<label>Check in date:</label> 
+	<input type="date" name="Check in date" placeholder="     Enter date"><br>
+	<br>
+	
+		<label >Check out date:</label>
+	<input type="date" name="user" placeholder="      Enter date">
+
+<br>
+<br>
+	<label>No. of persons:</label>
+	<input type="number" name="user" id="num" placeholder=" Enter a number">
+
+<br>
+
+<br>
+<label>Payment mode:</label>
+<select style ="padding: 03px; margin-left: 0px; border-radius: 25px;">
+	<option value ="Cash">
+		Cash
+	</option>
+	<option value ="online payment">
+		Debit/Credit card
+	</option>
+</select><br>
+<br>
+	<button onclick="bookingStatus()">Book now</button>
+	
+</form>
+<script>
+	function bookingStatus(){
+ 
+   var num = document.getElementById('num').value;
+   var cost = 500;
+
+   if (num == 2) {
+ 
+      
+
+       alert('The total money to be paid is' + cost*1.5);
+
+   } 
+
+   else if(num == 3){
+
+   	alert( 'total money to be paid' +  cost*2);
+
+   }
+
+   else if(num == 4)
+
+   {
+
+   	alert( 'total money to be paid' +  cost*2.5);
+
+   }
+
+   else
+
+   {
+   
+   alert( 'total money to be paid' +  cost);
+
+   }
+    
+	}
+	
+	
+	
+</script>
+<p></p>
+
+</body>
+</html>
